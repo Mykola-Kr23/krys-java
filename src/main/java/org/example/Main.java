@@ -88,7 +88,7 @@ public class Main {
     public static List<Integer> taskThree(int[] inputNums) {
         List<Integer> outputNums = new ArrayList<>();
         for (int num : inputNums) {
-            if ((num % 3) == 0) {
+            if ((num % 3) == 0 && num != 0) {
                 outputNums.add(num);
             }
         }
