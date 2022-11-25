@@ -16,7 +16,7 @@ public class Main {
             System.out.println(outputDescription(currentAction));
             String input = in.nextLine();
             String result = doAction(input);
-            if (result != "") {
+            if (!result.isEmpty()) {
                 System.out.println(result);
                 currentAction = selectNextTask;
             }
